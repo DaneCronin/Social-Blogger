@@ -20,7 +20,7 @@ Comment.init(
             }
         },
         user_id: {
-            tyep: DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             references: {
                 model: 'user',
