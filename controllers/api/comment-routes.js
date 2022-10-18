@@ -10,14 +10,14 @@ router.get('/', (req, res) => {
 
 });
 
-//Route to get one User by ID
+//Route to get one Comment by ID
 router.get('/:id', (req, res) => {
     Comment.findOne({
 
     })
 });
 
-//Route to create a new user
+//Route to create a new Comment
 router.post('/', (req, res) => {
     Comment.create({
 
