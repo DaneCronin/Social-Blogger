@@ -4,25 +4,26 @@ const {User, Post, Comment} = require('../../models');
 
 //Route to get all Comments
 router.get('/', (req, res) => {
-    Comment.findAll({
-        
-    })
-
-});
-
-//Route to get one Comment by ID
-router.get('/:id', (req, res) => {
-    Comment.findOne({
-
-    })
+    Comment.findAll()
+        .then(dbCommentData => res.json(dbCommentData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 //Route to create a new Comment
 router.post('/', (req, res) => {
     Comment.create({
-
-
+        comment_text: req.body.comment_text,
+        post_id: req.body.post_id,
+        user_id: req.session.user_id
     })
+    .then(dbCommentData => res.json(dbCommentData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 
