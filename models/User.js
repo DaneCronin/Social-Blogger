@@ -1,8 +1,6 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
-const { FAILSAFE_SCHEMA } = require('js-yaml');
-
 
 class User extends Model {
     checkPassword(loginPw) {
