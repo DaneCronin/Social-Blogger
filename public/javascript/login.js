@@ -19,8 +19,8 @@ async function loginFormHandler(event) {
       } else {
         alert(response.statusText);
       }
-    }
-  }
+    };
+  };
   
   async function signupFormHandler(event) {
     event.preventDefault();
@@ -37,7 +37,7 @@ async function loginFormHandler(event) {
           email,
           password
         }),
-        headers: { 'Content-Type': 'application/json' }
+         headers: { 'Content-Type': 'application/json' }
       });
   
       if (response.ok) {
@@ -45,8 +45,8 @@ async function loginFormHandler(event) {
       } else {
         alert(response.statusText);
       }
-    }
-  }
+    };
+  };
   
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
   
