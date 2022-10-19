@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { resolveWatchPlugin } = require('jest-resolve');
+
 const {User, Post, Comment} = require('../../models');
 
 
