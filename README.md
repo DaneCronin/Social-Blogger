@@ -23,7 +23,7 @@
 
   This application is deployed using Heroku and can be used here: 
   
-   https://git.heroku.com/enigmatic-retreat-21289.git
+   https://enigmatic-retreat-21289.herokuapp.com/
   
   Simply choose to sign up if you are a new user or login if you already have an account.  From there you can view other posts from users and comment on them or choose to create, edit, or delete any of your other posts. 
 
